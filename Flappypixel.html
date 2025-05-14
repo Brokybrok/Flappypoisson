@@ -89,30 +89,10 @@ body {
 	text-align: center;
 	z-index: 1;
 }
-
-/* Fullscreen button styling */
-#fullscreen-button {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	background-color: #5b3943;
-	color: white;
-	border: none;
-	border-radius: 0.5rem;
-	padding: 0.5rem 1rem;
-	font-family: 'Noto Sans', 'Droid Sans', Arial, sans-serif;
-	font-size: 1rem;
-	cursor: pointer;
-	z-index: 10;
-	transition: background-color 0.3s ease;
-}
-
-#fullscreen-button:hover {
-	background-color: #9b3943;
-}
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="Flappypixel.icon.png" />
-		<link rel="apple-touch-icon" href="Flappypixel.apple-touch-icon.png"/>
+<link rel="apple-touch-icon" href="Flappypixel.apple-touch-icon.png"/>
+
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -129,11 +109,9 @@ body {
 			<div id="status-notice"></div>
 		</div>
 
-		<button id="fullscreen-button" aria-label="Toggle fullscreen">Fullscreen</button>
-
 		<script src="Flappypixel.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"Flappypixel","experimentalVK":false,"fileSizes":{"Flappypixel.pck":495760,"Flappypixel.wasm":43699190},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"Flappypixel","experimentalVK":false,"fileSizes":{"Flappypixel.pck":495856,"Flappypixel.wasm":43699190},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -235,32 +213,6 @@ const engine = new Engine(GODOT_CONFIG);
 			setStatusMode('hidden');
 		}, displayFailureNotice);
 	}
-
-	// Fullscreen toggle button functionality
-	const fullscreenButton = document.getElementById('fullscreen-button');
-	const canvas = document.getElementById('canvas');
-
-	fullscreenButton.addEventListener('click', () => {
-		if (!document.fullscreenElement) {
-			// Request fullscreen on the canvas container (or canvas)
-			if (canvas.requestFullscreen) {
-				canvas.requestFullscreen();
-			} else if (canvas.webkitRequestFullscreen) { /* Safari */
-				canvas.webkitRequestFullscreen();
-			} else if (canvas.msRequestFullscreen) { /* IE11 */
-				canvas.msRequestFullscreen();
-			}
-		} else {
-			if (document.exitFullscreen) {
-				document.exitFullscreen();
-			} else if (document.webkitExitFullscreen) { /* Safari */
-				document.webkitExitFullscreen();
-			} else if (document.msExitFullscreen) { /* IE11 */
-				document.msExitFullscreen();
-			}
-		}
-	});
-
 }());
 		</script>
 	</body>
