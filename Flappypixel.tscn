@@ -19,6 +19,7 @@ size = Vector2(1208, 56.5)
 size = Vector2(1158.5, 20)
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2(1.63795, 1.69403)
 script = ExtResource("1_a5hm3")
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -82,6 +83,7 @@ offset_top = -54.2857
 offset_right = 48.2353
 offset_bottom = -31.2857
 text = "FLAPPYPIXEL"
+metadata/_edit_use_anchors_ = true
 
 [node name="Play" type="Button" parent="Playbutton"]
 offset_left = -38.0
@@ -89,6 +91,7 @@ offset_top = -14.0
 offset_right = 31.0
 offset_bottom = 9.0
 flat = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Pipes" parent="." instance=ExtResource("10_i33vl")]
 
@@ -100,6 +103,7 @@ offset_bottom = 39.0
 theme_override_fonts/font = ExtResource("6_jjjcm")
 theme_override_font_sizes/font_size = 30
 text = "0"
+metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Timer" parent="Score"]
 wait_time = 6.0
