@@ -19,7 +19,7 @@ size = Vector2(1208, 56.5)
 size = Vector2(1158.5, 20)
 
 [node name="Node2D" type="Node2D"]
-scale = Vector2(1.14322, 1.00275)
+scale = Vector2(1.28573, 1.25767)
 script = ExtResource("1_a5hm3")
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -48,7 +48,6 @@ position = Vector2(543, 639.25)
 shape = SubResource("RectangleShape2D_gnouh")
 
 [node name="Restartbutton" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(570, 371)
 scale = Vector2(4.805, 3.875)
 texture = ExtResource("5_vjcg0")
@@ -62,6 +61,7 @@ offset_bottom = 5.12903
 theme_override_fonts/font = ExtResource("6_jjjcm")
 theme_override_font_sizes/font_size = 8
 flat = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Gameoversign" type="Label" parent="Restartbutton"]
 offset_left = -44.5369
