@@ -48,6 +48,7 @@ position = Vector2(543, 639.25)
 shape = SubResource("RectangleShape2D_gnouh")
 
 [node name="Restartbutton" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(570, 371)
 scale = Vector2(4.805, 3.875)
 texture = ExtResource("5_vjcg0")
